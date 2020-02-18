@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Typography */
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Alfa Slab One', serif;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 4rem;
+    
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+  font-size: 2rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 900;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+  font-size: 1.8rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  color: #00A4FF;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h4 {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 500;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p, ul {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+a { 
+  color: #00A4FF;
+}
+
+a:hover {
+  color: #0072B1;
+}
+
+ul {
+  padding-inline-start: 20px;
+  list-style-type: circle;
+  max-width: 85%;
+}
+
+.white-text {
+  color: #fff;
+}
+
+/* Spacing and Positioning Classes */
+
+.full-height {
+  height: 100%;
+}
+
+.full-width { 
+ width: 100%;
+}
+
+.full-size {
+ height: 100%;
+ width: 100%;
+}
+
+.top-spacer-small {
+ padding-top: 0.5rem;
+}
+
+.top-spacer {
+ padding-top: 1rem;
+}
+
+.top-spacer-large {
+ padding-top: 1.5rem;
+}
+
+.bottom-spacer-small {
+ padding-bottom: 0.5rem;
+}
+
+.bottom-spacer {
+ padding-bottom: 1rem;
+}
+
+.bottom-spacer-large {
+ padding-bottom: 1.5rem;
+}
+
+.right-spacer-small {
+ padding-right: 0.5rem;
+}
+
+.right-spacer {
+ padding-right: 1rem;
+}
+
+.right-spacer-large {
+ padding-right: 1.5rem;
+}
+
+.left-spacer-small {
+ padding-left: 0.5rem;
+}
+
+.left-spacer {
+ padding-left: 1rem;
+}
+
+.left-spacer-large {
+ padding-left: 1.5rem;
+}
+
+.no-margins {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Global Containers */
+.content-container {
+  padding: 2rem;
+}
+
+@media screen and (min-width: 900px) {
+  .content-container {
+    padding: 2rem 8rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.heroContainer {
+  height: 100vh;
+}
+
+.MuiLinearProgress-colorPrimary.MuiLinearProgress-determinate {
+  background-color: rgba(0, 164,	255, 0.4);
+  height: 1rem;
+  border-radius: 4px;
+  width: 75%;
+}
+
+.MuiLinearProgress-barColorPrimary.MuiLinearProgress-bar1Determinate {
+  background-color: #00A4FF;
+}
+
+.footer {
+  padding: 1rem 0;
 }
