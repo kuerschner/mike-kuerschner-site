@@ -176,6 +176,14 @@ ul {
   height: 100vh;
 }
 
+.MuiSwitch-switchBase.MuiSwitch-colorSecondary.Mui-checked {
+  color: #fff;
+}
+
+.MuiSwitch-switchBase.MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+  background-color: #00A4FF;
+}
+
 .MuiLinearProgress-colorPrimary.MuiLinearProgress-determinate {
   background-color: rgba(0, 164,	255, 0.4);
   height: 1rem;
